@@ -1,6 +1,9 @@
 <template>
     <div>
-        <h1>{{  }}</h1>
+        {{mensajes.texto2}}
+        <div v-html="mensajes.texto2">
+            
+        </div>
     </div>
 </template>
 
@@ -15,7 +18,7 @@ export default {
             },
             mensajes:{
                 texto1: "Cadena de texto",
-                texto2: ".JS"
+                texto2: "<h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, nisi!</h1> <span>Etiqueta Span</span>"
             }
         }
     }
