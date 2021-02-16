@@ -10,12 +10,25 @@
         <li v-for="color in colores" v-bind:key="color">Color: {{ color }}</li>
       </ul>-->
 
-    <!--div v-for="color in colores2" v-bind:key="color">
+      <!--div v-for="color in colores2" v-bind:key="color">
         {{color.nombre}} -
         {{color.nombreIngles}}
         <p>--------------------------</p>
     </div>-->
-    <button>Selección</button>
+      <!--<button>Selección</button>-->
+
+      <!--
+      Se puede evaluar tambien asi v-if="mostrarBoton == 'xxx'" lo que este entre las comillas
+    -->
+      <p>{{ mostrarBoton }}</p>
+
+      <div v-if="mostrarBoton == 'clave'">
+        Usuario autenticado <button>Boton secreto</button>
+      </div>
+
+      <div v-else-if="mostrarBoton">Valor encontrado pero incorrecto</div>
+
+      <div v-else>Valor no encontrado, ingrese un valor</div>
 
     </div>
   </div>
@@ -52,24 +65,26 @@ export default {
         {
           nombre: "Morado",
           nombreIngles: "purple",
-        }
+        },
       ],
+      mostrarBoton: "clave",
     };
   },
 };
 </script>
 
 <style>
-  button{
-    background-color: green;
-    padding: 5px 10px;
-    color: white;
-    border: none;
-    border-radius: 100px;
-    margin-top: 15px;
-  }
+button {
+  background-color: green;
+  padding: 5px 10px;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  margin-top: 15px;
+  display: inline-block;
+}
 
-  button:active{
-    background: black;
-  }
+button:active {
+  background: black;
+}
 </style>

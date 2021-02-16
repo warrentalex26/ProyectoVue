@@ -3,7 +3,8 @@
         <img alt="Vue logo" src="./assets/logo.png">
 
     <!--<div v-for="x in 16" v-bind:key="x">/**/</div>-->
-    <MiComponente v-for="x in 3" v-bind:key="x"/>
+    <!--<MiComponente v-for="x in 3" v-bind:key="x"/>-->
+    <MiComponente/>
   </div>
 </template>
 
