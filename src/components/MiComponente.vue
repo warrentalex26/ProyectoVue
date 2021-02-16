@@ -78,17 +78,5 @@ export default {
 </script>
 
 <style scoped>
-.button {
-  background-color: green;
-  padding: 5px 10px;
-  color: white;
-  border: none;
-  border-radius: 100px;
-  margin-top: 15px;
-  display: inline-block;
-}
 
-.button:active {
-  background: black;
-}
 </style>
