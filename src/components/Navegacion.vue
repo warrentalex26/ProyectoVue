@@ -1,9 +1,9 @@
 <template>
   <ul class="nav">
-    <NavegacionItem titulo="Inicio" />
-    <NavegacionItem titulo="Quienes Somos" />
-    <NavegacionItem titulo="Tienda" />
-    <NavegacionItem titulo="Contacto" />
+    <NavegacionItem v-bind:navegacionData=" {titulo:'Inicio', url:'https://www.google.com/'}"/>
+    <NavegacionItem v-bind:navegacionData=" {titulo:'Quienes Somos', url:'https://www.google.com/'} "/>
+    <NavegacionItem v-bind:navegacionData=" {titulo:'Tienda', url:'https://www.google.com/'} "/>
+    <NavegacionItem v-bind:navegacionData=" {titulo:'Contacto', url:'https://www.google.com/'} "/>
   </ul>
 </template>
 
