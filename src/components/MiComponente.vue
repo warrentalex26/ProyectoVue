@@ -1,7 +1,8 @@
 <template>
   <div>
-    {{ mensajes.texto2 }}
-    <div v-html="mensajes.texto2"></div>
+    <!--{{ mensajes.texto2 }}-->
+    <!--<div v-html="mensajes.texto2"></div>-->
+
     <div>
       <!--<h1>{{colores[1]}}</h1>-->
 
@@ -9,11 +10,12 @@
         <li v-for="color in colores" v-bind:key="color">Color: {{ color }}</li>
       </ul>-->
 
-    <div v-for="color in colores2" v-bind:key="color">
+    <!--div v-for="color in colores2" v-bind:key="color">
         {{color.nombre}} -
         {{color.nombreIngles}}
         <p>--------------------------</p>
-    </div>
+    </div>-->
+    <button>Selección</button>
 
     </div>
   </div>
@@ -58,4 +60,16 @@ export default {
 </script>
 
 <style>
+  button{
+    background-color: green;
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    margin-top: 15px;
+  }
+
+  button:active{
+    background: black;
+  }
 </style>

@@ -2,7 +2,8 @@
   <div id="app">
         <img alt="Vue logo" src="./assets/logo.png">
 
-    <MiComponente/>
+    <!--<div v-for="x in 16" v-bind:key="x">/**/</div>-->
+    <MiComponente v-for="x in 3" v-bind:key="x"/>
   </div>
 </template>
 
