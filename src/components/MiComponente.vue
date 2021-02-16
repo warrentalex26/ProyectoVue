@@ -3,7 +3,7 @@
     <!--{{ mensajes.texto2 }}-->
     <!--<div v-html="mensajes.texto2"></div>-->
 
-    <div>
+    <!--<div>-->
       <!--<h1>{{colores[1]}}</h1>-->
 
       <!--<ul>
@@ -20,17 +20,21 @@
       <!--
       Se puede evaluar tambien asi v-if="mostrarBoton == 'xxx'" lo que este entre las comillas
     -->
+    <!--
       <p>{{ mostrarBoton }}</p>
 
       <div v-if="mostrarBoton == 'clave'">
-        Usuario autenticado <button>Boton secreto</button>
+        Usuario autenticado <button class="button">Boton secreto</button>
       </div>
 
       <div v-else-if="mostrarBoton">Valor encontrado pero incorrecto</div>
 
       <div v-else>Valor no encontrado, ingrese un valor</div>
 
-    </div>
+    </div>-->
+
+
+    
   </div>
 </template>
 
@@ -73,8 +77,8 @@ export default {
 };
 </script>
 
-<style>
-button {
+<style scoped>
+.button {
   background-color: green;
   padding: 5px 10px;
   color: white;
@@ -84,7 +88,7 @@ button {
   display: inline-block;
 }
 
-button:active {
+.button:active {
   background: black;
 }
 </style>
