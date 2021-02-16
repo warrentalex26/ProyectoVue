@@ -5,7 +5,10 @@
             
         </div>
         <div>
-            <h1>{{colores[1]}}</h1>
+            <!--<h1>{{colores[1]}}</h1>-->
+            <ul>
+                <li v-for="color in colores" v-bind:key="color">Color: {{color}}</li>
+            </ul>
         </div>
     </div>
 </template>
