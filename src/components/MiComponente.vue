@@ -4,6 +4,9 @@
         <div v-html="mensajes.texto2">
             
         </div>
+        <div>
+            <h1>{{colores[1]}}</h1>
+        </div>
     </div>
 </template>
 
@@ -18,8 +21,9 @@ export default {
             },
             mensajes:{
                 texto1: "Cadena de texto",
-                texto2: "<h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, nisi!</h1> <span>Etiqueta Span</span>"
-            }
+                texto2: "<h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, nisi!</h1> <p>Etiqueta P</p>"
+            },
+            colores:["Rojo", "Verde", "Amarillo", "Azul"]
         }
     }
 }
