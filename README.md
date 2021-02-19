@@ -1,21 +1,25 @@
 # miproyecto
 
-## Project setup
+`ESTE ES UN PROYECTO PARA LOS QUE ESTAN EMPEZANDO CON VUEJS 2, CADA COMMIT HABLA DE LOS PRINCIPALES TEMAS A TOMAR EN CUENTA A LA HORA DE DESARROLLAR CON VUE, ITERAR, CONDICIONALES, PASAR DATOS A OTO COMPONENTE, CREAR COMPONENTES, Y MUCHAS COSAS MAS.`
+
+- Basta con ir a los commit para ver como se hace lo que estas buscando.
+
+## Ejecutar este comando para instalar dependencias
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Correr el servidor
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### compilar en produccion
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### Ejecutar Lint 
 ```
 npm run lint
 ```
